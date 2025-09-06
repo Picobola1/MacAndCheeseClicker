@@ -1,5 +1,11 @@
 body{
     color: blue;
+    background-image: url(images/sky.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    
+    
 }
 #MacCheesePoints{
     color: rgb(255, 255, 255);
@@ -11,4 +17,7 @@ body{
     border-style: solid;
     border-color: coral;
     border-radius: 15px;
+}
+#Mac1{
+    margin: 0 auto;
 }
