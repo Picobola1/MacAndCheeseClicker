@@ -23,3 +23,10 @@ body{
     text-align: center;
 
 }
+#Mac1Img{
+    transition: all 0.1s ease; /* animate width & height over 0.3s */
+
+}
+#Mac1Img:active {
+  transform: scale(1.2); /* grow a bit while clicking */
+}
