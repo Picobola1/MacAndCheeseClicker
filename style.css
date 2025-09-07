@@ -31,7 +31,7 @@ body{
   transform: scale(1.2); /* grow a bit while clicking */
 }
 #ButtonMac1{
-    background-color: orange;
+    
     border-style: solid;
     border-color: white;
     border-radius: 5px;
