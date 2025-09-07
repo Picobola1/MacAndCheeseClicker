@@ -1,5 +1,5 @@
 let MacCheese;
-MacCheese = 100;
+MacCheese = 500;
 let MacOnClick = 1;
 let Mac1Bought = 0;
 let Mac2Bought = 0;
@@ -11,6 +11,7 @@ const Mac1 = document.getElementById("Mac1")
 const Mac1Img = document.getElementById("Mac1Img")
 const ButtonMac1 = document.getElementById("ButtonMac1")
 const ButtonMac2 = document.getElementById("ButtonMac2")
+const MacPerSecondLabel = document.getElementById("MacCheeseSecond")
 
 
 
@@ -60,6 +61,7 @@ function Mac2Colors(){
 function UpdateText(){
     ButtonMac1.textContent = "+1 Per Click🧀Cost: 100🧀: " + Mac1Bought + " " + Warning
     ButtonMac2.textContent = "+1 Per Second🧀Cost: 200🧀: " + Mac2Bought + " " + Warning2
+    MacPerSecondLabel.textContent = "Mac Per Second: " + MacPerSec
     PointsLabel.textContent = "Points: " + MacCheese;
 }
 function MacPerSecond(){

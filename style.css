@@ -57,3 +57,14 @@ body{
     height: 50px;
     margin: 400px 1000px;
 }
+#MacCheeseSecond{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 166, 0);
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 2%;
+    width: 300px;
+    border-style: solid;
+    border-color: coral;
+    border-radius: 15px;
+}
