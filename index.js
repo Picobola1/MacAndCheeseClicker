@@ -12,6 +12,7 @@ const Mac1Img = document.getElementById("Mac1Img")
 const ButtonMac1 = document.getElementById("ButtonMac1")
 const ButtonMac2 = document.getElementById("ButtonMac2")
 const MacPerSecondLabel = document.getElementById("MacCheeseSecond")
+const MacCheesePerClickLabel = document.getElementById("MacCheesePerClickLabel")
 
 
 
@@ -50,7 +51,7 @@ function Mac1Colors(){
     } 
 }
 function Mac2Colors(){
-    if (MacCheese >= 100){
+    if (MacCheese >= 200){
         ButtonMac2.style.backgroundColor = 'orange' 
         Warning2 = ""
     } else {
@@ -62,6 +63,7 @@ function UpdateText(){
     ButtonMac1.textContent = "+1 Per Click🧀Cost: 100🧀: " + Mac1Bought + " " + Warning
     ButtonMac2.textContent = "+1 Per Second🧀Cost: 200🧀: " + Mac2Bought + " " + Warning2
     MacPerSecondLabel.textContent = "Mac Per Second: " + MacPerSec
+    MacCheesePerClickLabel.textContent = "Mac Per Click: " + MacOnClick
     PointsLabel.textContent = "Points: " + MacCheese;
 }
 function MacPerSecond(){
