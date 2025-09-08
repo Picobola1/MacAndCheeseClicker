@@ -1,5 +1,5 @@
 let MacCheese;
-MacCheese = 0;
+MacCheese = 4999;
 let MacOnClick = 1;
 let Mac1Bought = 0;
 let Mac2Bought = 0;
@@ -71,9 +71,9 @@ function UpdateText(){
 function MacPerSecond(){
     MacCheese += MacPerSec
 }
-function MacGoBig() {
-  if (MacCheese > 800){
-
+function MacGoBoom() {
+  if (MacCheese >= 5000){
+    window.location.href ='boom.html'
   };
 
   
@@ -92,4 +92,4 @@ setInterval(MacPerSecond, 1000);
 setInterval(Mac1Colors, 100);
 setInterval(Mac2Colors, 100);
 setInterval(UpdateText, 100);
-setInterval(MacGoBig, 100);
+setInterval(MacGoBoom, 100);
