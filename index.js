@@ -6,8 +6,8 @@ let Mac2Bought = 0;
 let MacPerSec = 0;
 let Warning;
 let Warning2;
-let MacGrowthRate = 0.25;
-let MacBaseSize = 250;
+
+
 const PointsLabel =  document.getElementById("MacCheesePoints")
 const Mac1 = document.getElementById("Mac1")
 const Mac1Img = document.getElementById("Mac1Img")
@@ -72,9 +72,6 @@ function MacPerSecond(){
     MacCheese += MacPerSec
 }
 function MacGoBig() {
-  let newSize = MacBaseSize + (MacCheese * MacGrowthRate);
-  Mac1Img.style.width = newSize + "px";
-  Mac1Img.style.height = newSize + "px";
   if (MacCheese > 800){
 
   };
