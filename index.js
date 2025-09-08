@@ -1,11 +1,13 @@
 let MacCheese;
-MacCheese = 500;
+MacCheese = 0;
 let MacOnClick = 1;
 let Mac1Bought = 0;
 let Mac2Bought = 0;
 let MacPerSec = 0;
 let Warning;
 let Warning2;
+let MacGrowthRate = 0.25;
+let MacBaseSize = 250;
 const PointsLabel =  document.getElementById("MacCheesePoints")
 const Mac1 = document.getElementById("Mac1")
 const Mac1Img = document.getElementById("Mac1Img")
@@ -69,6 +71,17 @@ function UpdateText(){
 function MacPerSecond(){
     MacCheese += MacPerSec
 }
+function MacGoBig() {
+  let newSize = MacBaseSize + (MacCheese * MacGrowthRate);
+  Mac1Img.style.width = newSize + "px";
+  Mac1Img.style.height = newSize + "px";
+  if (MacCheese > 800){
+
+  };
+
+  
+}
+
 
 
 
@@ -82,3 +95,4 @@ setInterval(MacPerSecond, 1000);
 setInterval(Mac1Colors, 100);
 setInterval(Mac2Colors, 100);
 setInterval(UpdateText, 100);
+setInterval(MacGoBig, 100);
