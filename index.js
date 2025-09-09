@@ -1,5 +1,5 @@
 let MacCheese;
-MacCheese = 4999;
+MacCheese = 0;
 let MacOnClick = 1;
 let Mac1Bought = 0;
 let Mac2Bought = 0;
@@ -72,7 +72,7 @@ function MacPerSecond(){
     MacCheese += MacPerSec
 }
 function MacGoBoom() {
-  if (MacCheese >= 5000){
+  if (MacCheese >= 2000){
     window.location.href ='boom.html'
   };
 
